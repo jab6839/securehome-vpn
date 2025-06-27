@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-panel, .right-panel {
+    width: 48%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h3 {
+    margin-top: 0;
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="text"], select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-connect {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-disconnect {
+    background-color: #dc3545;
+    color: white;
+}
+
+.vpn-status.connected {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.vpn-status.disconnected {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+}
+
+.error {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px;
+}
+
+.info {
+    color: orange;
+    font-weight: bold;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+body.dark-mode .left-panel,
+body.dark-mode .right-panel {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 5px rgba(255,255,255,0.1);
+}
+
+body.dark-mode button {
+    background-color: #333;
+    color: white;
+}
+

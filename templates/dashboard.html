@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SecureHome VPN Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="{% if dark_mode == 'on' %}dark-mode{% endif %}">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="{{ category }}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <div class="container">
+        <div class="left-panel">
+            <h3>User: {{ username }}</h3>
+
+            <form method="get" action="{{ url_for('logout') }}">
+                <button type="submit">Logout</button>
+            </form>
+
+            <form method="get" action="{{ url_for('logs') }}">
+                <button type="submit">View Logs</button>
+            </form>
+
+            <form method="post" action="{{ url_for('toggle_dark_mode') }}">
+                <button type="submit">Toggle Dark Mode</button>
+            </form>
+
+            <h4>Smart Reminder</h4>
+            <form method="post" action="{{ url_for('set_reminder') }}">
+                <input type="text" name="reminder" placeholder="e.g. Remind me to reconnect at 3pm">
+                <button type="submit">Set Reminder</button>
+            </form>
+            {% if session.get('reminder') %}
+                <p class="info">🔔 {{ session.get('reminder') }}</p>
+            {% endif %}
+        </div>
+
+        <div class="right-panel">
+            <h3>VPN Status</h3>
+            <div class="vpn-status disconnected">
+                <strong>Status:</strong> Disconnected<br>
+                <strong>IP Address:</strong> 192.168.1.101
+            </div>
+
+            <form method="post" action="{{ url_for('connect_vpn') }}">
+                <button type="submit" class="btn-connect">Connect</button>
+            </form>
+
+            <form method="post" action="{{ url_for('disconnect_vpn') }}">
+                <button type="submit" class="btn-disconnect">Disconnect</button>
+            </form>
+
+            <form method="post" action="{{ url_for('set_server') }}">
+                <label for="server">Server:</label>
+                <select name="server">
+                    <option value="US-East">US-East</option>
+                    <option value="US-West">US-West</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Asia">Asia</option>
+                </select>
+                <button type="submit">Set Server</button>
+            </form>
+
+            <h4>Live Connection</h4>
+            <p><strong>Uptime:</strong> 00:00:00</p>
+            <p><strong>Bandwidth:</strong> 15 Mbps</p>
+            <p><strong>Encryption:</strong> AES-256</p>
+
+            <h4>Video/Voice Simulation</h4>
+            <p>🎥 Simulated webcam feed…</p>
+            <p>🎙️ Simulated voice channel active…</p>
+
+            <form method="post" action="{{ url_for('launch_rustdesk') }}">
+                <button type="submit">Launch RustDesk</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+

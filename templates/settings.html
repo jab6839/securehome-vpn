@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings - SecureHome VPN</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="{% if dark_mode %}dark-mode{% endif %}">
+    <div class="container">
+        <h2>Settings</h2>
+        <form action="/set-server" method="post">
+            <label for="server">Preferred Server:</label>
+            <input type="text" name="server" id="server" placeholder="e.g. US-West">
+            <button type="submit" class="btn-blue">Save Server</button>
+        </form>
+
+        <form action="/set-reminder" method="post" style="margin-top: 20px;">
+            <label for="reminder">Add Smart Reminder:</label>
+            <input type="text" name="reminder" id="reminder" placeholder="e.g. Reconnect at 3 PM">
+            <button type="submit" class="btn-blue">Save Reminder</button>
+        </form>
+
+        <form action="/toggle-theme" method="post" style="margin-top: 20px;">
+            <button type="submit" class="btn-blue">Toggle Dark Mode</button>
+        </form>
+
+        <div class="nav-links" style="margin-top: 20px;">
+            <a href="/dashboard">Back to Dashboard</a>
+        </div>
+    </div>
+</body>
+</html>
+

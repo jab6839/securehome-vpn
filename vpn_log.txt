@@ -1,0 +1,51 @@
+[2025-06-25 20:19:30] VPN connected
+[2025-06-25 20:19:31] VPN disconnected
+[2025-06-25 20:19:32] VPN connected
+[2025-06-25 20:19:32] VPN disconnected
+[2025-06-25 20:19:34] Server set to Europe
+[2025-06-25 20:19:35] Server set to Europe
+[2025-06-25 20:19:37] Reminder set: Disconnect at 9pm.
+[2025-06-25 20:22:07] VPN connected
+[2025-06-25 20:38:34] VPN disconnected
+[2025-06-25 20:38:36] VPN connected
+[2025-06-25 20:54:10] VPN connected
+[2025-06-25 20:54:11] VPN disconnected
+[2025-06-25 20:54:12] VPN connected
+[2025-06-25 20:54:12] VPN disconnected
+[2025-06-25 20:55:45] Server set to Europe
+[2025-06-25 20:55:46] Server set to Europe
+[2025-06-25 21:22:11] VPN connected
+[2025-06-25 21:22:12] VPN disconnected
+[2025-06-25 21:22:12] VPN connected
+[2025-06-25 21:22:48] VPN connected
+[2025-06-25 21:22:49] VPN disconnected
+[2025-06-25 21:22:50] VPN connected
+[2025-06-25 21:22:50] VPN disconnected
+[2025-06-25 21:37:49] Reminder set: Disconnect at 9pm.
+[2025-06-25 21:37:56] Server set to Europe
+[2025-06-25 21:38:26] Reminder set: 
+[2025-06-25 21:38:27] Reminder set: 
+[2025-06-25 21:38:29] Reminder set: Disconnect at 9pm.
+[2025-06-25 21:38:32] VPN connected
+[2025-06-25 21:38:33] VPN disconnected
+[2025-06-25 21:38:34] VPN connected
+[2025-06-25 21:50:08] VPN connected
+[2025-06-25 21:50:08] VPN disconnected
+[2025-06-25 21:50:11] Reminder set: Disconnect at 9pm.
+[2025-06-25 21:52:22] Reminder set: 
+[2025-06-25 21:53:30] VPN connected
+[2025-06-25 21:53:30] VPN disconnected
+[2025-06-25 22:39:28] VPN connected
+[2025-06-25 22:39:29] VPN disconnected
+[2025-06-25 22:39:34] Reminder set: Disconnect at 9pm.
+[2025-06-25 23:10:06] Reminder set: Disconnect at 9pm.
+[2025-06-25 23:10:08] VPN connected
+[2025-06-25 23:10:08] VPN disconnected
+[2025-06-25 23:19:41] Reminder set: Disconnect at 9pm.
+[2025-06-25 23:41:46] Reminder set: Disconnect at 9pm.
+[2025-06-25 23:42:21] Reminder set: 
+[2025-06-25 23:42:23] Reminder set: Disconnect at 9pm.
+[2025-06-25 23:43:25] Server set to US-East
+[2025-06-26 00:06:04] Reminder set: Disconnect at 9pm.
+[2025-06-26 00:06:06] Reminder set: remind me to reconnect at 3pm.
+[2025-06-26 00:06:08] Reminder set: Disconnect at 9pm.
