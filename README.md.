@@ -1,0 +1,38 @@
+# SecureHome VPN
+
+SecureHome VPN is a Flask-based application designed to enable secure remote access to a home desktop environment using real WireGuard VPN integration and RustDesk for video/voice remote desktop control. This capstone project was developed to demonstrate a functional, user-friendly VPN dashboard that supports connection management, reminders, server selection, activity logs, and more.
+
+---
+
+## 🔐 Features
+
+- ✅ **User Login**  
+- ✅ **WireGuard VPN Connect/Disconnect**  
+- ✅ **Live VPN Status Indicator** (green/red + real IP)  
+- ✅ **Set Smart Reminders** (with confirmation banner)  
+- ✅ **Server Selection Dropdown**  
+- ✅ **Launch Remote Desktop with RustDesk**  
+- ✅ **Connection Logs Page**  
+- ✅ **Dark Mode Toggle**  
+- ✅ **Mobile/Tablet/Desktop Access Compatibility**
+
+---
+
+## 🧠 Tech Stack
+
+- Python 3  
+- Flask  
+- HTML/CSS (Jinja Templates)  
+- Shell commands for WireGuard (`wg`, `wg-quick`)  
+- RustDesk (remote desktop app)  
+- JavaScript (dark mode + form handling)  
+- Local storage and logging
+
+---
+
+## 🚀 How to Run Locally
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/YOUR_USERNAME/securehome-vpn.git
+cd securehome-vpn
