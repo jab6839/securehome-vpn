@@ -1,0 +1,27 @@
+## 🔧 Week 9: Enhanced Implementation
+
+This week focused on turning the SecureHome VPN project from a basic simulation into a fully functional platform.
+
+### ✅ Enhancements Made:
+- Integrated real **WireGuard** VPN backend using `wg show` to reflect live connection status
+- Implemented **VPN Connect/Disconnect** logic with accurate green/red status bar
+- Replaced fake “Live Connection” box with real-time VPN status indicators
+- Integrated **RustDesk** remote desktop launcher for full video/voice simulation
+- Fixed and re-enabled the **Dark Mode toggle** with cookie-based persistence
+- Restored **smart reminder form** with flash confirmation
+- Moved VPN logs to a dedicated page with timestamps
+- Added **server selection dropdown** logic
+- Improved the login screen layout (centered and styled)
+
+### 🧠 Comparison to Week 7:
+| Feature                    | Week 7 (Basic)           | Week 9 (Enhanced)                         |
+|---------------------------|--------------------------|-------------------------------------------|
+| VPN Status                | Static placeholder       | Real-time status using `wg show`          |
+| Dark Mode Toggle          | Not working              | Now works and persists                    |
+| RustDesk Integration      | Not implemented          | Fully integrated                          |
+| Reminders                 | Broken                   | Working with confirmation                 |
+| Logs                      | Mixed with dashboard     | Moved to dedicated page                   |
+| Server Dropdown           | No backend logic         | Now functional                            |
+| Login UI                  | Basic layout             | Centered and styled login form            |
+
+These updates improve the realism, security, and usability of the platform for remote home use.
