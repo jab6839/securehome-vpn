@@ -1,43 +1,56 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f2f2f2;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
-.container {
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dashboard-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 20px;
+    padding: 30px;
 }
 
-.left-panel, .right-panel {
-    width: 48%;
-    padding: 20px;
+.left-panel,
+.right-panel {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-h3 {
-    margin-top: 0;
+.dark-mode .left-panel,
+.dark-mode .right-panel {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+form {
+    margin-bottom: 15px;
 }
 
 button {
-    padding: 10px;
     width: 100%;
-    margin-top: 10px;
-    background-color: #ccc;
+    padding: 10px;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+    background-color: #ccc;
+    color: black;
 }
 
-input[type="text"], select {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.dark-mode button {
+    background-color: #333;
+    color: white;
 }
 
 .btn-connect {
@@ -50,51 +63,59 @@ input[type="text"], select {
     color: white;
 }
 
+.flash-message {
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+.flash-message.success {
+    background-color: #28a745;
+}
+
+.flash-message.error {
+    background-color: #dc3545;
+}
+
+.flash-message.info {
+    background-color: #17a2b8;
+}
+
+.vpn-status {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 .vpn-status.connected {
     background-color: #28a745;
     color: white;
-    padding: 10px;
-    border-radius: 5px;
 }
 
 .vpn-status.disconnected {
     background-color: #dc3545;
     color: white;
+}
+
+.reminder-message {
+    margin-top: 10px;
+    background-color: #fff3cd;
+    color: #856404;
     padding: 10px;
+    border-left: 5px solid #ffeeba;
     border-radius: 5px;
-}
-
-.success {
-    background-color: #28a745;
-    color: white;
-    padding: 10px;
-}
-
-.error {
-    background-color: #dc3545;
-    color: white;
-    padding: 10px;
-}
-
-.info {
-    color: orange;
     font-weight: bold;
 }
 
-/* Dark Mode */
-body.dark-mode {
-    background-color: #121212;
-    color: #f4f4f4;
-}
-
-body.dark-mode .left-panel,
-body.dark-mode .right-panel {
-    background-color: #1e1e1e;
-    box-shadow: 0 0 5px rgba(255,255,255,0.1);
-}
-
-body.dark-mode button {
-    background-color: #333;
-    color: white;
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
